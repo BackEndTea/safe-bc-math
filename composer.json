@@ -1,0 +1,33 @@
+{
+    "name": "backendtea/safe-bc-math",
+    "description": "Safe versions of BC math functions",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Gert de Pagter",
+            "email": "BackEndTea@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^7.2",
+        "ext-bcmath": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "BackEndTea\\BcMath\\": "src/"
+        },
+        "files": ["src/bcmath.php"]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "BackEndTea\\BcMath\\": "test/"
+        }
+    },
+    "require-dev": {
+        "doctrine/coding-standard": "^7.0",
+        "phpunit/phpunit": "^8.5",
+        "phpstan/phpstan": "^0.12.17",
+        "vimeo/psalm": "^3.9"
+    }
+}
